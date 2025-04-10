@@ -770,7 +770,7 @@ class GamePlay:
         self.move_list = []
         self.move_index = 0
         self.ai_step_timer = pygame.USEREVENT + 1
-        pygame.time.set_timer(self.ai_step_timer, 200)
+        pygame.time.set_timer(self.ai_step_timer, 1000)
     
     def start_solver_thread(self, puzzle_data):
         def solve_task():
